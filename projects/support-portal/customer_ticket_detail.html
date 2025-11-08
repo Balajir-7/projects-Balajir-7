@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket Detail</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Ticket #4582</h1>
+    <div class="actions">
+      <span class="status in-progress">In Progress</span>
+      <a class="button-link secondary" href="customer_tickets.html">Back to Tickets</a>
+    </div>
+  </header>
+  <main>
+    <section class="card">
+      <div class="section-header">
+        <h2>Assigned Technician</h2>
+        <span class="badge">Jordan Blake</span>
+      </div>
+      <div class="grid two">
+        <div>
+          <h3>Original Submission</h3>
+          <p><strong>Subject:</strong> Workstation rebooting during rendering</p>
+          <p><strong>Submitted:</strong> Aug 24, 8:03 AM</p>
+          <p><strong>Device Type:</strong> Desktop</p>
+          <p><strong>Urgency:</strong> High &mdash; System down</p>
+        </div>
+        <div>
+          <h3>Customer Description</h3>
+          <p>
+            Every time I render a large video in Premiere, my workstation suddenly restarts. It began after the latest driver update. No error message appears, but the fans spin loudly before shutting down.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>Conversation</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-entry">
+          <div class="meta">
+            <span>Aug 24, 10:21 AM &middot; Jordan Blake</span>
+            <span class="badge">Technician</span>
+          </div>
+          <p>
+            Hi Taylor, thanks for the details. Please confirm whether the reboot also happens when the device is unplugged from the UPS and connected directly to the wall outlet. This helps us rule out a power delivery issue.
+          </p>
+        </article>
+        <article class="timeline-entry">
+          <div class="meta">
+            <span>Aug 24, 12:03 PM &middot; Taylor Morgan</span>
+            <span class="badge">Customer</span>
+          </div>
+          <p>
+            I tried bypassing the UPS and the machine still rebooted midway through the render. I also noticed the CPU temperature spiked to 95&deg;C right before it happened.
+          </p>
+        </article>
+        <article class="timeline-entry">
+          <div class="meta">
+            <span>Aug 24, 2:11 PM &middot; Jordan Blake</span>
+            <span class="badge">Technician</span>
+          </div>
+          <p>
+            Appreciate the follow-up. I'm ordering a replacement cooling unit and will schedule an onsite visit tomorrow afternoon. Please avoid heavy renders until the repair is complete.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>Reply to Technician</h2>
+      </div>
+      <form>
+        <div>
+          <label for="reply-message">Message</label>
+          <textarea id="reply-message" placeholder="Share new information or respond to your technician"></textarea>
+        </div>
+        <div>
+          <label for="reply-attachment">Add Attachment</label>
+          <input type="file" id="reply-attachment" />
+        </div>
+        <button type="submit">Send Reply</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Resolution Summary</h2>
+      <p class="muted">The ticket is still in progress. Once resolved, your technician's summary will appear here for quick reference.</p>
+    </section>
+  </main>
+</body>
+</html>

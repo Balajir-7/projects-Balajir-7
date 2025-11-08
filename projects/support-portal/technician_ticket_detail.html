@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket Detail &mdash; Technician</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Ticket #4582 &mdash; Workstation rebooting</h1>
+    <div class="actions">
+      <select>
+        <option>Mark Status: Diagnosing</option>
+        <option>Mark Status: Pending Customer Reply</option>
+        <option>Mark Status: Awaiting Parts</option>
+        <option>Mark Status: Resolved</option>
+      </select>
+      <a class="button-link secondary" href="technician_dashboard.html">Back to Queue</a>
+    </div>
+  </header>
+  <main>
+    <section class="card">
+      <div class="section-header">
+        <h2>Customer Overview</h2>
+      </div>
+      <div class="grid two">
+        <div>
+          <p><strong>Customer:</strong> Taylor Morgan</p>
+          <p><strong>Email:</strong> taylor.morgan@example.com</p>
+          <p><strong>Phone:</strong> (555) 201-9988</p>
+          <p><strong>Preferred Contact:</strong> Weekdays after 3 PM</p>
+        </div>
+        <div>
+          <p><strong>Service Type:</strong> PC Repair</p>
+          <p><strong>Device:</strong> Desktop</p>
+          <p><strong>Urgency:</strong> High &mdash; System down</p>
+          <p><strong>Created:</strong> Aug 24, 8:03 AM</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>Internal Notes</h2>
+      </div>
+      <form>
+        <div>
+          <label for="diagnosis-notes">Diagnosis Notes</label>
+          <textarea id="diagnosis-notes" placeholder="Document troubleshooting steps, tools used, and findings."></textarea>
+        </div>
+        <div>
+          <label for="time-tracking">Time Tracking</label>
+          <div class="grid two">
+            <input id="time-tracking" type="text" placeholder="e.g., 0.5 hours &mdash; Diagnosis" />
+            <button type="button" class="secondary">Log Time</button>
+          </div>
+        </div>
+        <div>
+          <label for="internal-attachments">Attach Files (Private)</label>
+          <input id="internal-attachments" type="file" multiple />
+        </div>
+        <button type="submit">Save Internal Notes</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>Communication</h2>
+        <button class="secondary">Insert Canned Response</button>
+      </div>
+      <div class="timeline">
+        <article class="timeline-entry">
+          <div class="meta">
+            <span>Aug 24, 10:21 AM &middot; You</span>
+            <span class="badge">Technician</span>
+          </div>
+          <p>
+            Initial response sent to gather power supply details and to check for thermal throttling.
+          </p>
+        </article>
+        <article class="timeline-entry">
+          <div class="meta">
+            <span>Aug 24, 12:03 PM &middot; Customer</span>
+            <span class="badge">Customer</span>
+          </div>
+          <p>
+            Reported reboots even on direct AC power; observed CPU temps reaching 95&deg;C.
+          </p>
+        </article>
+      </div>
+      <form>
+        <div>
+          <label for="public-reply">Reply to Customer</label>
+          <textarea id="public-reply" placeholder="Update the customer, request information, or provide next steps."></textarea>
+        </div>
+        <div class="grid two">
+          <input type="file" />
+          <button type="submit">Send Reply</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>Resolution Summary</h2>
+      </div>
+      <form>
+        <div>
+          <label for="resolution-notes">Final Summary</label>
+          <textarea id="resolution-notes" placeholder="Describe the fix, parts replaced, and any preventive guidance."></textarea>
+        </div>
+        <button type="submit">Publish Summary</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

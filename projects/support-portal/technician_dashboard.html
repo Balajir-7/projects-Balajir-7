@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technician Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Technician Queue</h1>
+    <div class="actions">
+      <a class="button-link secondary" href="knowledge_base.html">Knowledge Base</a>
+      <a class="button-link" href="reporting_dashboard.html">Analytics</a>
+    </div>
+  </header>
+  <main>
+    <section class="card">
+      <div class="section-header">
+        <h2>Today at a Glance</h2>
+      </div>
+      <div class="cards-grid">
+        <div class="metric-card">
+          <h3>Tickets Assigned</h3>
+          <div class="value">7</div>
+          <div class="trend">+2 since yesterday</div>
+        </div>
+        <div class="metric-card">
+          <h3>Awaiting Customer</h3>
+          <div class="value">2</div>
+          <div class="trend">Follow up today</div>
+        </div>
+        <div class="metric-card">
+          <h3>Average FRT</h3>
+          <div class="value">18m</div>
+          <div class="trend">Under target (30m)</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>Unassigned Queue</h2>
+        <button class="secondary">Sort: Urgency &uarr;</button>
+      </div>
+      <div class="list">
+        <article class="list-item">
+          <div>
+            <h4>#4593 &mdash; Malware infection on CFO laptop</h4>
+            <p class="muted">Submitted 12 mins ago &middot; Urgency: High</p>
+          </div>
+          <button>Claim Ticket</button>
+        </article>
+        <article class="list-item">
+          <div>
+            <h4>#4592 &mdash; Configure new remote VPN profile</h4>
+            <p class="muted">Submitted 34 mins ago &middot; Urgency: Medium</p>
+          </div>
+          <button>Claim Ticket</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>My Assigned Tickets</h2>
+        <div class="tag-group">
+          <span class="tag">5 In Progress</span>
+          <span class="tag">2 Waiting Customer</span>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Ticket #</th>
+            <th>Subject</th>
+            <th>Status</th>
+            <th>Customer</th>
+            <th>Last Update</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#4582</td>
+            <td>Workstation rebooting during rendering</td>
+            <td><span class="status in-progress">Diagnosing</span></td>
+            <td>Taylor Morgan</td>
+            <td>Today, 2:11 PM</td>
+            <td><a class="button-link secondary" href="technician_ticket_detail.html">Open</a></td>
+          </tr>
+          <tr>
+            <td>#4576</td>
+            <td>Router intermittently dropping Wi-Fi</td>
+            <td><span class="status pending">Pending Customer Reply</span></td>
+            <td>Ferrell Studio</td>
+            <td>Yesterday, 4:25 PM</td>
+            <td><a class="button-link secondary" href="technician_ticket_detail.html">Open</a></td>
+          </tr>
+          <tr>
+            <td>#4544</td>
+            <td>Deploy accounting software update</td>
+            <td><span class="status in-progress">Awaiting Parts</span></td>
+            <td>Kelly Ridge LLC</td>
+            <td>Aug 23, 5:40 PM</td>
+            <td><a class="button-link secondary" href="technician_ticket_detail.html">Open</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>Activity Feed</h2>
+      </div>
+      <div class="list">
+        <article class="list-item">
+          <div>
+            <h4>#4550 &mdash; Customer replied</h4>
+            <p class="muted">5 mins ago &middot; "Thanks for the instructions, reboot fixed it!"</p>
+          </div>
+          <button class="secondary">View</button>
+        </article>
+        <article class="list-item">
+          <div>
+            <h4>#4523 &mdash; Ticket auto-closed</h4>
+            <p class="muted">27 mins ago &middot; Awaiting customer response exceeded SLA</p>
+          </div>
+          <button class="secondary">Review</button>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

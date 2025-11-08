@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge Base</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Internal Knowledge Base</h1>
+    <a class="button-link" href="technician_dashboard.html">Back to Dashboard</a>
+  </header>
+  <main>
+    <section class="card">
+      <div class="section-header">
+        <h2>Search Articles</h2>
+      </div>
+      <div class="search-bar">
+        <input type="search" placeholder="Search procedures, e.g., 'Windows 11 rollback'" />
+        <button>Search</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>Featured Categories</h2>
+        <a class="button-link secondary" href="#">Submit New Article</a>
+      </div>
+      <div class="cards-grid">
+        <article class="metric-card">
+          <h3>Malware Removal</h3>
+          <p>Step-by-step playbooks, isolation procedures, and cleanup scripts.</p>
+        </article>
+        <article class="metric-card">
+          <h3>Network &amp; VPN</h3>
+          <p>Configuration templates, firewall rules, and troubleshooting charts.</p>
+        </article>
+        <article class="metric-card">
+          <h3>Hardware Repairs</h3>
+          <p>Part numbers, disassembly guides, and vendor escalation contacts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>Recently Updated</h2>
+      </div>
+      <div class="list">
+        <article class="list-item">
+          <div>
+            <h4>Windows 11: Rollback after failed KB5035853</h4>
+            <p class="muted">Updated 2 hours ago by Dana Ortiz</p>
+          </div>
+          <button class="secondary">View</button>
+        </article>
+        <article class="list-item">
+          <div>
+            <h4>FortiGate remote VPN deployment checklist</h4>
+            <p class="muted">Updated yesterday by Jordan Blake</p>
+          </div>
+          <button class="secondary">View</button>
+        </article>
+        <article class="list-item">
+          <div>
+            <h4>HP LaserJet 4000: Paper feed roller replacement</h4>
+            <p class="muted">Updated 4 days ago by Chris Kim</p>
+          </div>
+          <button class="secondary">View</button>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
