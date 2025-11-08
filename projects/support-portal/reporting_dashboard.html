@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Analytics</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Reporting &amp; Analytics</h1>
+    <a class="button-link secondary" href="technician_dashboard.html">Back to Technician View</a>
+  </header>
+  <main>
+    <section class="card">
+      <div class="section-header">
+        <h2>Key Metrics</h2>
+        <div class="actions">
+          <button class="secondary">This Week</button>
+          <button class="secondary">This Month</button>
+          <button class="secondary">Custom Range</button>
+        </div>
+      </div>
+      <div class="cards-grid">
+        <article class="metric-card">
+          <h3>Average Resolution Time</h3>
+          <div class="value">12.4h</div>
+          <p class="trend">Improved 8% vs. last month</p>
+        </article>
+        <article class="metric-card">
+          <h3>First Response Time</h3>
+          <div class="value">22m</div>
+          <p class="trend">Slightly above goal (20m)</p>
+        </article>
+        <article class="metric-card">
+          <h3>Tickets Closed</h3>
+          <div class="value">164</div>
+          <p class="trend">+12% MoM</p>
+        </article>
+        <article class="metric-card">
+          <h3>Customer Satisfaction</h3>
+          <div class="value">4.6★</div>
+          <p class="trend">Rolling 30-day average</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>Technician Performance</h2>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Technician</th>
+            <th>Tickets Closed</th>
+            <th>Average Resolution Time</th>
+            <th>Customer Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jordan Blake</td>
+            <td>42</td>
+            <td>9.5h</td>
+            <td>4.8★</td>
+          </tr>
+          <tr>
+            <td>Dana Ortiz</td>
+            <td>39</td>
+            <td>11.1h</td>
+            <td>4.6★</td>
+          </tr>
+          <tr>
+            <td>Chris Kim</td>
+            <td>37</td>
+            <td>14.7h</td>
+            <td>4.5★</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>Issue Trends</h2>
+      </div>
+      <div class="grid two">
+        <div>
+          <h3>Top Categories</h3>
+          <ul>
+            <li>Printer issues &mdash; 30%</li>
+            <li>Network outages &mdash; 24%</li>
+            <li>Software installs &mdash; 18%</li>
+            <li>Account access &mdash; 12%</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Monthly Volume</h3>
+          <p class="muted">Simple line chart placeholder showing steady growth with seasonal spikes.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

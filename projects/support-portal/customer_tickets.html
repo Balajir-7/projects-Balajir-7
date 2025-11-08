@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Support Tickets</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>My Support Tickets</h1>
+    <div class="actions">
+      <a class="button-link secondary" href="#filters">Filters</a>
+      <a class="button-link" href="customer_new_ticket.html">Create New Ticket</a>
+    </div>
+  </header>
+  <main>
+    <section id="filters" class="card">
+      <div class="section-header">
+        <h2>Quick Filters</h2>
+      </div>
+      <div class="grid three">
+        <button class="secondary">All Tickets</button>
+        <button class="secondary">Open Tickets</button>
+        <button class="secondary">Closed Tickets</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>Ticket History</h2>
+        <span class="badge">Total tickets: 12</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Ticket #</th>
+            <th>Subject</th>
+            <th>Status</th>
+            <th>Assigned Technician</th>
+            <th>Last Updated</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#4582</td>
+            <td>Workstation rebooting during rendering</td>
+            <td><span class="status in-progress">In Progress</span></td>
+            <td>Jordan Blake</td>
+            <td>Today, 9:42 AM</td>
+            <td><a class="button-link secondary" href="customer_ticket_detail.html">View</a></td>
+          </tr>
+          <tr>
+            <td>#4576</td>
+            <td>Router intermittently dropping Wi-Fi</td>
+            <td><span class="status pending">Pending Reply</span></td>
+            <td>Assigned &mdash; Dana</td>
+            <td>Yesterday, 4:25 PM</td>
+            <td><a class="button-link secondary" href="customer_ticket_detail.html">View</a></td>
+          </tr>
+          <tr>
+            <td>#4559</td>
+            <td>On-site printer maintenance request</td>
+            <td><span class="status resolved">Resolved</span></td>
+            <td>Chris Kim</td>
+            <td>Aug 18, 2:15 PM</td>
+            <td><a class="button-link secondary" href="customer_ticket_detail.html">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

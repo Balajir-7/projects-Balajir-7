@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket Feedback</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Close Ticket #4559</h1>
+    <a class="button-link secondary" href="customer_tickets.html">Back to My Tickets</a>
+  </header>
+  <main>
+    <section class="card">
+      <div class="section-header">
+        <h2>Resolution Confirmation</h2>
+      </div>
+      <form>
+        <fieldset>
+          <legend>Was your issue resolved?</legend>
+          <div class="feedback-options">
+            <label><input type="radio" name="resolved" value="yes" /> Yes</label>
+            <label><input type="radio" name="resolved" value="no" /> No</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Rate the quality of service</legend>
+          <div class="rating-stars" aria-label="Rate from 1 to 5 stars">
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9734;</span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Feedback (Optional)</legend>
+          <textarea placeholder="Share what went well or what could have been better."></textarea>
+        </fieldset>
+
+        <div class="section-header">
+          <button type="submit">Submit Feedback &amp; Close</button>
+          <button type="button" class="secondary">Re-open Ticket</button>
+        </div>
+      </form>
+    </section>
+    <section class="card">
+      <h2>Resolution Summary</h2>
+      <p>
+        <strong>Technician:</strong> Chris Kim<br />
+        <strong>Resolution:</strong> Updated firmware, replaced the paper feed roller, and calibrated the print queue settings.
+      </p>
+    </section>
+  </main>
+</body>
+</html>

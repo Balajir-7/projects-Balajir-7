@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit Support Ticket</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Customer Support Portal</h1>
+    <a class="button-link secondary" href="customer_tickets.html">My Tickets</a>
+  </header>
+  <main>
+    <section class="card">
+      <div class="section-header">
+        <h2>Submit a New Ticket</h2>
+        <span class="badge">Average response: &lt; 2 hours</span>
+      </div>
+      <form>
+        <fieldset>
+          <legend>Customer Information</legend>
+          <div class="grid two">
+            <div>
+              <label for="full-name">Full Name</label>
+              <input id="full-name" name="full-name" type="text" placeholder="e.g., Taylor Morgan" required />
+            </div>
+            <div>
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="phone" type="tel" placeholder="e.g., (555) 201-9988" />
+            </div>
+          </div>
+          <div class="grid two">
+            <div>
+              <label for="email">Primary Contact Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div>
+              <label for="preferred-time">Preferred Contact Time</label>
+              <input id="preferred-time" name="preferred-time" type="text" placeholder="Weekdays after 3 PM" />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Issue Classification</legend>
+          <div class="grid three">
+            <div>
+              <label for="service-type">Service Type</label>
+              <select id="service-type" name="service-type" required>
+                <option value="">Select a service</option>
+                <option>PC Repair</option>
+                <option>Network Setup</option>
+                <option>Software Support</option>
+                <option>Virus / Malware Removal</option>
+                <option>Data Recovery</option>
+              </select>
+            </div>
+            <div>
+              <label for="device-type">Device Type</label>
+              <select id="device-type" name="device-type" required>
+                <option value="">Select a device</option>
+                <option>Desktop</option>
+                <option>Laptop</option>
+                <option>Phone / Tablet</option>
+                <option>Router</option>
+                <option>Printer / Peripheral</option>
+              </select>
+            </div>
+            <div>
+              <label for="urgency">Urgency Level</label>
+              <select id="urgency" name="urgency" required>
+                <option value="">Select urgency</option>
+                <option>Low &mdash; Can wait</option>
+                <option>Medium &mdash; Needs attention soon</option>
+                <option>High &mdash; System down</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Issue Details</legend>
+          <div>
+            <label for="issue-title">Title / Subject</label>
+            <input id="issue-title" name="issue-title" type="text" placeholder="Laptop won't boot after update" required />
+          </div>
+          <div>
+            <label for="issue-description">Detailed Description</label>
+            <textarea id="issue-description" name="issue-description" placeholder="Describe what happened, any troubleshooting attempts, and error messages"></textarea>
+          </div>
+          <div>
+            <label for="attachments">Attachments</label>
+            <input id="attachments" name="attachments" type="file" multiple />
+            <small class="muted">Attach screenshots, logs, or photos to help us diagnose faster.</small>
+          </div>
+        </fieldset>
+        <div class="section-header">
+          <button type="submit">Submit Ticket</button>
+          <button type="reset" class="secondary">Clear Form</button>
+        </div>
+      </form>
+    </section>
+    <section class="card">
+      <h2>Tips for a Faster Resolution</h2>
+      <ul>
+        <li>Describe recent changes like updates or new hardware installed.</li>
+        <li>Include specific error messages, even partial phrases.</li>
+        <li>Mention any troubleshooting steps you already tried.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
